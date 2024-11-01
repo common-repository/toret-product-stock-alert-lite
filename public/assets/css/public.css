@@ -1,0 +1,128 @@
+.woocommerce .product .stock-alert-button{
+    border:solid 1px #dddddd;
+    background:none;
+    background:#48afdb;
+    color:#ffffff;
+    cursor:pointer;
+    padding:5px 7px;
+    margin-bottom:20px;
+    display:inline-block;
+}
+.woocommerce .product .stock-alert-button:hover{
+    opacity:0.7;
+}
+.popup-alert-stock {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+.popup-alert-stock header{
+    padding: 12px 20px;
+    border-bottom: 1px solid #e1e3e4;
+}
+.popup-alert-stock header h3{
+    margin: 0; 
+    padding:0;
+}
+.popup-alert-stock .popup-alert-body { 
+    padding: 20px 20px 0 20px; 
+}
+.popup-alert-body ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.popup-alert-body ul li{
+    list-style: none;
+    margin:0 0 20px 0;
+    padding:0;
+}
+.popup-alert-body label{
+    display:none;
+}
+.popup-alert-body input[type="text"],
+.popup-alert-body input[type="email"]{
+    width:100%;
+    padding:10px;
+}
+.popup-alert-stock .gdpr-text{
+    padding: 12px 20px;
+    border-top: 1px solid #e1e3e4;
+}
+.popup-alert-stock footer{
+    padding: 12px 20px;
+    border-top: 1px solid #e1e3e4;
+    text-align: right;
+}
+.popup-alert-stock footer .popup-alert-submit,
+.popup-response-close{
+    color:#ffffff;
+    background:#48afdb;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+.popup-alert-stock footer .popup-alert-submit:hover,
+.popup-response-close:hover{
+    opacity:0.6;
+}
+
+.popup-alert-stock a.close {
+    line-height: 1;
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    color: #aab2bd;
+    font-weight: 700;
+}
+.popup-alert-stock-overlay{
+    position:absolute;
+    display:none;
+    left:0;
+    top:0;
+    background: rgba( 255, 255, 255, 0.5 );
+    width:100%;
+    height:100%;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+.popup-alert-stock-response,
+.popup-alert-stock-email-error{
+    position:absolute;
+    display:none;
+    left:0;
+    top:0;
+    background: rgba( 255, 255, 255, 1 );
+    width:100%;
+    height:100%;    
+    text-align:center;
+}
+.popup-alert-stock-response h2,
+.popup-alert-stock-email-error h2{
+    margin-top:80px;
+    margin-bottom:20px;
+}
+.popup-alert-stock-response h3,
+.popup-alert-stock-email-error h3{
+    margin-bottom:20px;
+}
+@media only screen and (min-width: 600px){
+    .popup-alert-stock{
+        width:500px;
+    }
+}
+@media only screen and (max-width: 599px){
+    .popup-alert-stock{
+        width:80%;
+    }
+}
